@@ -19,9 +19,9 @@ Hint: (Structure of got variable)
 */
 
 // 1. Log the value of key "houses"
-got.houses;
+console.log(got.houses);
 // 2. Log the length of the "houses" key
-got.houses.length;
+console.log(got.houses.length);
 // 3. Log the name of all houses in got one by one
 for (let house of got.houses) {
   console.log(house.name);
@@ -61,9 +61,9 @@ for (let house of got.houses) {
   console.log(houseNames);
 }
 // 12. Log the size of people in Starks house
-
+console.log(got.houses[0].people.length);
 // 13. Log the size of people in Lannisters house
-
+console.log(got.houses[1].people.length);
 // 14. Add the name and size of people in an object like {Starks: 4, Lannisters: 6} and log the object
 
 // 15. Log the name of all the people of all the houses in got one by one
@@ -79,9 +79,6 @@ for (const allName of allNames) {
 }
 // 16. Push all names into a new array named `allPeople` and log the value array.
 let allPeople = [];
-for (let house of got.houses) {
-  allPeople.push(house.name);
-}
 for (let people of got.houses[0].people) {
   allPeople.push(people.name);
 }
@@ -91,7 +88,7 @@ for (let people of got.houses[1].people) {
 console.log(allPeople);
 // 17. Log the value and length of `allPeople` array created above
 console.log(allPeople);
-console.log(allPeople.length - 1);
+console.log(allPeople.length);
 // 18. Push all descriptions into an array named `allDescription`
 let allDescription = [];
 for (let people of got.houses[0].people) {
@@ -103,5 +100,5 @@ for (let people of got.houses[1].people) {
 console.log(allDescription);
 // 19. Log the value and length `allDescription`
 console.log(allDescription);
-console.log(allDescription.length - 1);
+console.log(allDescription.length);
 // 20. Only the the description whose length is more than 30. (use .length property on string to get the length)
